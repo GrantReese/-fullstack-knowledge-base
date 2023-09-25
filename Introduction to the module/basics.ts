@@ -89,6 +89,34 @@ class Student {
 
 const student = new Student('Max', 'Smith', 32, ['Angular']);
 student.enroll('React');
-student.courses
+//student.courses
 
 //typescript you can define the properties before hand as opposed to js
+
+
+//working with interfaces
+interface Human {
+    firstName: string;
+    age: number;
+
+    greet () => void;
+}
+
+let max: Human;
+
+max = {
+    firstName: 'Max',
+    age: 33,
+    greet() {
+        console.log('Help')
+    },
+
+}
+
+class Instructor implements Human{
+    firstName: string;
+    age: number;
+    greet(): void {
+        
+    }
+}
