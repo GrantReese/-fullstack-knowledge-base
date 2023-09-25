@@ -99,7 +99,7 @@ interface Human {
     firstName: string;
     age: number;
 
-    greet () => void;
+    greet: () => void;
 }
 
 let max: Human;
@@ -120,3 +120,5 @@ class Instructor implements Human{
         
     }
 }
+
+//having issues getting it config'd
